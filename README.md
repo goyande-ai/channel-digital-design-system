@@ -69,20 +69,62 @@ When starting a design or presentation project, reference the BRAND.md and token
   - Place on white or grey-pale only
   - Do not recolour, resize, or redraw
 
-## Updating This System
+## For Designers & Developers: Contributing
 
-When the agency updates brand assets or guidelines:
-1. Update the relevant files in `assets/`
-2. Update `tokens.json` and `BRAND.md` to reflect changes
-3. Commit and push to the main branch
-4. Notify all projects to re-sync
+This design system is a living resource. If you notice gaps, inconsistencies, or improvements needed:
+
+### Making Changes
+
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/goyande-ai/channel-digital-design-system.git
+   cd channel-digital-design-system
+   ```
+
+2. **Make your changes:**
+   - Update `BRAND.md` if guidelines need clarifying or expanding
+   - Update `tokens.json` if colors, typography, or spacing change
+   - Add/update assets in `assets/` with matching README files
+   - Update `.claude/skills/channel-digital/SKILL.md` if reference material changes
+
+3. **Commit and push:**
+   ```bash
+   git add -A
+   git commit -m "Brief description of what changed and why"
+   git push origin master
+   ```
+
+4. **Notify the team** that an update is available
+
+### Common Updates
+
+- **New logo or asset:** Add to appropriate folder in `assets/`, create/update README
+- **Brand guideline change:** Update `BRAND.md` with the new rule and its rationale
+- **Color/type change:** Update `tokens.json` AND `BRAND.md`, tag as a version bump
+- **New component or layout:** Add to `components/` with preview and documentation
+
+### Version Bumps
+
+When making significant updates:
+1. Tag the commit: `git tag v1.1` (or v2.0 for major changes)
+2. Push tags: `git push origin --tags`
+3. Update changelog in this README
+
+### Questions or Suggestions?
+
+Leave an issue in this repository, or comment on the [Claude Docs artifact](https://claude.ai/code/artifact/02e5b43d-262a-4e61-abf6-697e47513f47).
 
 ## Sharing with Your Team
 
-This design system is meant to be referenced across all Claude Code projects and presentations. Share the link to this repository or the BRAND.md file with anyone creating Channel Digital materials.
+**For everyone:** Share the [Claude Docs guide](https://claude.ai/code/artifact/02e5b43d-262a-4e61-abf6-697e47513f47) — it's readable and needs no GitHub access.
+
+**For non-technical users:** Point them to the Docs link above and the "For Non-Technical Users" section there.
+
+**For designers and developers:** Invite them as collaborators on this repository so they can contribute improvements.
 
 ---
 
 **Last updated:** 2026-10-08  
 **Maintained by:** Pete Graves  
+**Repository:** https://github.com/goyande-ai/channel-digital-design-system  
 **Source:** Channel Proposal Template 2026
